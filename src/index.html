@@ -3,51 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    <title>Generador de Cartas</title>
+    <link rel="stylesheet" href="style.css">
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+      crossorigin="anonymous">
+    </script>
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
     <script src="app.js"></script>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <!--
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">If this text is <b>not</b> centered and <b>yellow</b>, you probably have an error</p>
-      <script type="text/javascript">
-                
-          let posicion = Math.floor(Math.random()*3);
-          let d = new Date();
-          document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()+"</h1>" + 
-                                    "<h1>item:  " + posicion + "</h1>";
-      </script>
-
-      <p id="excuse">My dog eat my homework</p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="card-container">
+      <div class="playingCard">
+          <div class="top-symbol">
+              <span id="topSymbol">♥</span>
+          </div>
+          <div class="center-number">
+              <span id="centerNumber">A</span>
+          </div>
+          <div class="bottom-symbol">
+              <span id="bottomSymbol">♥</span>
+          </div>
+      </div>
+      <div class="buttons">
+        <button id="generarCarta" type="button" class="btn btn-primary border border-black">
+          Genera una nueva carta
+        </button>
       </div>
     </div>
-    -->
-      <script type="text/javascript">
-          function frase(){
-            let who = ['the dog','my granma','his turtle','my bird'];
-            let what = ['eat','pissed','crushed','broked'];
-            let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
-
-            let posicion = Math.floor(Math.random()*4);
-
-            return who[posicion] + ' ' + what[posicion] + ' ' + when[posicion];
-          }
-
-
-          document.body.innerHTML = "<h1>Mi excusa:  " + frase() + "</h1>";
-      </script>
-
+    
+  <script src="app.js"></script>
   </body>
 </html>
