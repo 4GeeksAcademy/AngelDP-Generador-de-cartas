@@ -1,7 +1,7 @@
 let myButton = document.getElementById("myButton")
 
 let type = ["♥", "♠︎", "♦︎", "♣︎"];
-let cartas = [2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K", "A"];
+let cartas = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
 let colors = ["red", "black"]
 
 function randomIndex (arr){
