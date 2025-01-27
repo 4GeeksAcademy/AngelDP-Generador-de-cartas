@@ -31,4 +31,7 @@ window.onload = function() {
   GeneraUnaCarta ()
 
   document.querySelector("#generarCarta").addEventListener("click", GeneraUnaCarta);
+
+  let interval = setInterval(GeneraUnaCarta, 5000);
+  
 }
