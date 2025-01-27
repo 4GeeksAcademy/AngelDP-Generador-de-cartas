@@ -5,15 +5,23 @@ let cartas = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
 let colors = ["red", "black"]
 
 function randomIndex (arr){
+
   let newIndex = Math.floor(Math.random() * arr.length);
   return arr[newIndex];
+
+}
+
+function getColorByType(arr) {
+
+  return (arr === "♥" || arr === "♦︎") ? "red" : "black";
+
 }
 
 function GeneraUnaCarta () {
   
   let newType = randomIndex(type);
   let newNumber = randomIndex(cartas);
-  let newColor = randomIndex(colors);
+  let newColor = getColorByType(newType);
 
 
   document.querySelector("#topSymbol").innerHTML = newType;
