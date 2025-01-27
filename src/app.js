@@ -1,6 +1,6 @@
 let myButton = document.getElementById("myButton")
 
-let type = ["♥️", "♠︎", "♦︎", "♣︎"];
+let type = ["♥", "♠︎", "♦︎", "♣︎"];
 let cartas = [2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K", "A"];
 let colors = ["red", "black"]
 
@@ -29,7 +29,6 @@ function GeneraUnaCarta () {
 window.onload = function() {
 
   GeneraUnaCarta ()
-
 
   document.querySelector("#generarCarta").addEventListener("click", GeneraUnaCarta);
 }
